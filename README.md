@@ -2,7 +2,7 @@
 
 [MIT 6.S081: Operating System Engineering (Fall 2021)](https://pdos.csail.mit.edu/6.828/2021/index.html) Labs
 
-- [x] Lab: Xv6 and Unix utilities (branch: 'util')
+- [x] Lab: Xv6 and Unix utilities (branch: `util`)
 - [ ] Lab: system calls
 - [ ] Lab: page tables
 - [ ] Lab: traps
