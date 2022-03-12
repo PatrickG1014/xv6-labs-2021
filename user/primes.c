@@ -10,11 +10,11 @@ main(int argc, char *argv[])
   pipe(p);
   if (fork() == 0) {
     close(p[1]);
-    int prime;
+    uint32 prime;
     int fd = p[0];
     while (read(fd, (char *)&prime, 4) > 0) {
       printf("prime %d\n", prime);
-      int n;
+      uint32 n;
       pipe(p);
       while (read(fd, (char *)&n, 4) > 0) {
         if (n % prime != 0) {
@@ -34,7 +34,7 @@ main(int argc, char *argv[])
     exit(0);
   } else { // the first process
     close(p[0]);
-    for (int i = 2; i <= 35; ++i) { // feed the numbers 2 through 35 into the pipeline
+    for (uint32 i = 2; i <= 35; ++i) { // feed the numbers 2 through 35 into the pipeline
       write(p[1], (char *)&i, 4);
     }
     close(p[1]);
