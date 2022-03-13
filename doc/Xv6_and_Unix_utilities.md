@@ -6,7 +6,7 @@
 - [x] pingpong (easy)
 - [x] primes (moderate)/(hard)
 - [x] find (moderate)
-- [ ] xargs (moderate)
+- [x] xargs (moderate)
 - [ ] Optional challenge exercises
 
 ## Exercises
@@ -43,36 +43,29 @@
 ```shell
 == Test sleep, no arguments ==
 $ make qemu-gdb
-sleep, no arguments: OK (7.0s)
+sleep, no arguments: OK (7.9s)
 == Test sleep, returns ==
 $ make qemu-gdb
-sleep, returns: OK (1.3s)
+sleep, returns: OK (0.8s)
 == Test sleep, makes syscall ==
 $ make qemu-gdb
-sleep, makes syscall: OK (1.1s)
+sleep, makes syscall: OK (1.0s)
 == Test pingpong ==
 $ make qemu-gdb
-pingpong: OK (1.0s)
+pingpong: OK (1.2s)
 == Test primes ==
 $ make qemu-gdb
 primes: OK (1.0s)
 == Test find, in current directory ==
 $ make qemu-gdb
-find, in current directory: OK (1.0s)
+find, in current directory: OK (1.2s)
 == Test find, recursive ==
 $ make qemu-gdb
-find, recursive: OK (1.2s)
+find, recursive: OK (1.3s)
 == Test xargs ==
 $ make qemu-gdb
-xargs: FAIL (1.2s)
-    Number of appearances of 'hello'
-    got:
-      0
-    expected:
-      3
-    QEMU output saved to xv6.out.xargs
+xargs: OK (1.4s)
 == Test time ==
-time: FAIL
-    Cannot read time.txt
-Score: 80/100
+time: OK
+Score: 100/100
 ```
