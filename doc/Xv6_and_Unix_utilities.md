@@ -2,14 +2,15 @@
 
 [Lab util: Unix utilities](https://pdos.csail.mit.edu/6.828/2021/labs/util.html)
 
-- [x] sleep (easy)
-- [x] pingpong (easy)
-- [x] primes (moderate)/(hard)
-- [x] find (moderate)
-- [x] xargs (moderate)
+- [x] sleep (*easy*)
+- [x] pingpong (*easy*)
+- [x] primes (*moderate*)/(*hard*)
+- [x] find (*moderate*)
+- [x] xargs (*moderate*)
 - [ ] Optional challenge exercises
 
 ## Exercises
+
 - sleep
   
   Implement the UNIX program `sleep` for xv6; your `sleep` should pause for a user-specified number of ticks. A tick is a notion of time defined by the xv6 kernel, namely the time between two interrupts from the timer chip. Your solution should be in the file `user/sleep.c`.
@@ -32,11 +33,11 @@
 
 - Optional challenge exercises
   
-  - Write an uptime program that prints the `uptime` in terms of ticks using the uptime system call. (easy)
+  - Write an uptime program that prints the `uptime` in terms of ticks using the uptime system call. (*easy*)
 
-  - Support regular expressions in name matching for `find`. `grep.c` has some primitive support for regular expressions. (easy)
+  - Support regular expressions in name matching for `find`. `grep.c` has some primitive support for regular expressions. (*easy*)
 
-  - The xv6 shell (`user/sh.c`) is just another user program and you can improve it. It is a minimal shell and lacks many features found in real shell. For example, modify the shell to not print a $ when processing shell commands from a file (moderate), modify the shell to support wait (easy), modify the shell to support lists of commands, separated by ";" (moderate), modify the shell to support sub-shells by implementing "(" and ")" (moderate), modify the shell to support tab completion (easy), modify the shell to keep a history of passed shell commands (moderate), or anything else you would like your shell to do. (If you are very ambitious, you may have to modify the kernel to support the kernel features you need; xv6 doesn't support much.)
+  - The xv6 shell (`user/sh.c`) is just another user program and you can improve it. It is a minimal shell and lacks many features found in real shell. For example, modify the shell to not print a $ when processing shell commands from a file (*moderate*), modify the shell to support wait (*easy*), modify the shell to support lists of commands, separated by ";" (*moderate*), modify the shell to support sub-shells by implementing "(" and ")" (*moderate*), modify the shell to support tab completion (*easy*), modify the shell to keep a history of passed shell commands (*moderate*), or anything else you would like your shell to do. (If you are very ambitious, you may have to modify the kernel to support the kernel features you need; xv6 doesn't support much.)
 
 ## Grading
 
