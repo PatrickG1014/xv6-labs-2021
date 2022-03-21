@@ -658,3 +658,18 @@ procdump(void)
     printf("\n");
   }
 }
+
+// Collect the number of processes whose state is not UNUSED.
+uint64
+getprocnum(void)
+{
+  uint64 procnum = 0;
+  struct proc *p;
+
+  for (p = proc; p < &proc[NPROC]; ++p) {
+    if (p->state == UNUSED)
+      continue;
+    ++procnum;
+  }
+  return procnum;
+}
