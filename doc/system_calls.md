@@ -3,7 +3,7 @@
 [Lab syscall: System calls](https://pdos.csail.mit.edu/6.828/2021/labs/syscall.html)
 
 - [x] System call tracing (*moderate*)
-- [ ] Sysinfo (*moderate*)
+- [x] Sysinfo (*moderate*)
 - [ ] Optional challenge exercises
 
 ## Exercises
@@ -27,29 +27,20 @@
 ```shell
 == Test trace 32 grep ==
 $ make qemu-gdb
-trace 32 grep: OK (7.5s)
+trace 32 grep: OK (6.4s)
 == Test trace all grep ==
 $ make qemu-gdb
-trace all grep: OK (0.9s)
+trace all grep: OK (1.1s)
 == Test trace nothing ==
 $ make qemu-gdb
-trace nothing: OK (1.0s)
+trace nothing: OK (0.9s)
 == Test trace children ==
 $ make qemu-gdb
-trace children: OK (15.3s)
+trace children: OK (13.6s)
 == Test sysinfotest ==
 $ make qemu-gdb
-sysinfotest: FAIL (0.9s)
-    ...
-         hart 2 starting
-         init: starting sh
-         $ sysinfotest
-         exec sysinfotest failed
-         $ qemu-system-riscv64: terminating on signal 15 from pid 8251 (make)
-    MISSING '^sysinfotest: OK'
-    QEMU output saved to xv6.out.sysinfotest
+sysinfotest: OK (2.6s)
 == Test time ==
-time: FAIL
-    Cannot read time.txt
-Score: 20/35
+time: OK
+Score: 35/35
 ```
