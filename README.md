@@ -10,5 +10,5 @@
 - [ ] Lab: Multithreading
 - [ ] Lab: networking
 - [ ] Lab: locks
-- [ ] Lab: file system
+- [x] [Lab: file system](doc/file_system.md) (branch: [`fs`](https://github.com/PatrickG1014/xv6-labs-2021/tree/fs))
 - [ ] Lab: mmap
